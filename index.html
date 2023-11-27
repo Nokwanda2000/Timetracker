@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1-0" >
+
+        <style>
+body{ background-color: rgb(10, 10, 53);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Box1{ background-color: rgba(75, 75, 212, 0.596);
+    width:240px ;
+    height: 310px;
+    border-radius: 20px;
+    margin-top: 0px;
+    
+
+}
+.Box2{background-color: rgb(20, 22, 122);
+    width: 240px;
+    height: 500px;
+    border-radius: 20px;
+    margin-left: 50px;
+    
+}
+
+.grid-container{ display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(6, 6, 49);
+  color: white;
+  width: 400px;
+  height:100px;
+  justify-content: space-evenly;
+  gap: 15px;
+  margin-bottom: 240px;
+  row-gap:62px;
+  
+  
+}
+
+
+
+ .inner{ background-color: darkblue;
+    border-radius: 20px;
+    height: 150px;
+    width: 200px;
+    
+
+    
+
+ }   
+
+.image1{ margin-left: 130px;
+    width: 30px;
+    margin-top: 10px;
+    
+    
+}
+.box-outer1{background-color: orange;
+    border-radius: 20px;
+    height: 150px;
+    width: 200px;
+
+
+}
+
+.box-outer2{background-color: rgba(74, 74, 182, 0.733);
+        border-radius: 20px;
+        
+        height: 150px;
+    width: 200px;
+        
+}
+    
+.box-outer3{background-color: rgb(218, 109, 127);
+    border-radius: 20px;
+    height: 150px;
+    width: 200px;
+    
+
+}
+
+.box-outer4{background-color: lime;
+     border-radius:20px ;
+     height: 170px;
+    width: 200px;
+
+
+}
+ .box-outer5{background-color: rgba(139, 10, 224, 0.74);
+    border-radius: 20px;
+    height: 150px;
+    width: 200px;
+
+ }
+ .box-outer6{background-color: orange;
+    border-radius: 20px;
+    height: 150px;
+    width: 200px;
+    
+
+
+ }
+ .image{
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 50px;
+    border: solid white;
+    
+
+ }
+ .button{ overflow: hidden;
+    text-decoration: none;
+    border: 0cap;
+    
+
+ }
+
+.elli{margin-left: 70px;
+    margin-top: 20px;
+
+}
+.text{ font-family: Arial, Helvetica, sans-serif;
+padding-left: 30px;
+font-size: small;
+margin-top:  20px;
+
+}
+
+h1{ margin-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+}
+h6{ margin-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+h3{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 500;
+margin-left: 30px;
+color: aliceblue;
+font-size: 40px;
+
+}
+h5{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 300;
+color: aliceblue;
+margin-left: 30px;
+
+}
+@media screen and (max-width:1440px) {
+
+}
+p{ color: aliceblue;
+    margin-left: 30px;
+
+}
+        </style>
+    </head>
+    <body>
+        <script src="/index.js"></script>
+
+        <div class="Box2">
+            <div class="Box1">
+           <img class="image" src="image-jeremy.png" width="100px">
+           
+           
+           <h5>report for</h5>
+           <h3>Jeremy 
+            <br>Robson</h3>
+            </div>
+            <div class="days">
+            <button id="p1" onclick="Daily()"> Daily</button>
+            <button id="p2" onclick="Weekly()"> Weekly</button>
+            <button id="p3" onclick="Monthly()"> Monthly</button>
+            </div>
+            </div>
+        
+
+</div>
+        
+<div class="grid-container">
+<div class="box-outer1">
+    <img class="image1" src="icon-work.svg" width="80px">
+    <div class="inner">
+        <h3 class="text">Work
+            <img class="elli"  src="icon-ellipsis.svg" >
+        </h3>
+        <h1>32hrs </h1>
+        <h6>Last week - 36hrs</h6>
+        
+    </div>
+</div>
+<div class="box-outer2">
+
+    <img class="image1" src="icon-play.svg">
+    <div class="inner">
+        <h3 class="text">Play
+        <img class="elli"  src="icon-ellipsis.svg">
+        </h3>
+        <h1>10hrs</h1>
+        <h6>Last Week - 8hrs</h6>
+</div>
+</div>
+<div class="box-outer3">
+<img class="image1" src="icon-study.svg">
+<div class="inner">
+    <h3 class="text">Study
+        <img class="elli"src="icon-ellipsis.svg">
+    </h3>
+    <h1>4hrs</h1>
+    <h6>Last Week - 7hrs</h6>
+
+</div>
+</div>
+<div class="box-outer4">
+    <img class="image1"  src="icon-exercise.svg">
+    <div class="inner">
+        <h3 class="text">Excercise
+            <img class="elli"  src="icon-ellipsis.svg">
+        </h3>
+        <h1>4hrs</h1>
+        <h6>Last Week - 5hrs</h6>
+
+
+    </div>
+
+
+</div>
+<div class="box-outer5">
+    <img class="image1" src="icon-social.svg">
+    <div class="inner">
+        <h3 class="text">Social
+            <img class="elli" src="icon-ellipsis.svg">
+        </h3>
+        <h1>5hrs</h1>
+        <h6>Last Week - 10hrs</h6>
+    </div>
+</div>
+<div class="box-outer6">
+    <img class="image1" src="icon-self-care.svg">
+    <div class="inner">
+        <h3 class="text">Self-care
+        <img  class="elli" src="icon-ellipsis.svg">
+        </h3>
+        <h1>2hrs</h1>
+        <h6>Last Week - 2hrs</h6>
+    </div>
+</div>
+
+</div>
+
+    </body>
+</html>
